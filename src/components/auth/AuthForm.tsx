@@ -15,8 +15,8 @@ function AuthForm({ type }: AuthFormProps) {
       <AuthFormBlock>
         <div className='title-logo'>{title}</div>
         <hr className='title-line' />
-        <label className='form-text'>아이디</label>
-        <StyledInput name='id' placeholder='아이디를 입력해주세요!' />
+        <label className='form-text'>이메일</label>
+        <StyledInput name='email' placeholder='이메일을 입력해주세요!' />
         <label className='form-text'>비밀번호</label>
         <StyledInput
           type='password'
