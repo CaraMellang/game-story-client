@@ -5,11 +5,10 @@ import { AiFillGithub } from 'react-icons/ai';
 import { IoGameController } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 import media from '../../lib/styles/media';
-import Block from './Block';
 
 function Header() {
   return (
-    <Block>
+    <>
       <HeaderBlock>
         <Link to='/'>
           <LeftBlock>GameStory</LeftBlock>
@@ -35,14 +34,14 @@ function Header() {
         </RightBlock>
       </HeaderBlock>
       <StyledHr />
-    </Block>
+    </>
   );
 };
 
 const HeaderBlock = styled.div`
   height: 4rem;
-  margin: auto;
   display: flex;
+	padding: 0px 16px;
   justify-content: space-between;
   align-items: center;
 `;

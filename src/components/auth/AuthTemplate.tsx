@@ -17,7 +17,8 @@ const AuthTemplateBlock = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  padding: 0px 16px;
+  height: 90%;
 `;
 
 const StyledBox = styled.div`
