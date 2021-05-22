@@ -6,7 +6,7 @@ export type BlockProps = {
   children: ReactNode;
 };
 
-const Block = ({ children }: BlockProps) => {
+function Block({ children }: BlockProps) {
   return <MainBlock>{children}</MainBlock>;
 };
 
@@ -24,7 +24,8 @@ const MainBlock = styled.div`
   }
 
   ${media.large} {
-    width: 912px;
+    /* width: 912px; */
+		width: calc(100% - 2rem);
   }
 
   ${media.medium} {

@@ -7,7 +7,7 @@ export type AuthFormProps = {
   type: string;
 };
 
-const AuthForm = ({ type }: AuthFormProps) => {
+function AuthForm({ type }: AuthFormProps) {
   const title = type === 'login' ? '로그인' : '회원가입';
 
   return (
@@ -55,7 +55,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       </AuthFormBlock>
     </>
   );
-};
+}
 
 const AuthFormBlock = styled.form`
   display: flex;
@@ -113,9 +113,9 @@ const Footer = styled.div`
     margin-right: 0.5rem;
   }
 
-	a {
-		color: ${colors.indigo[9]};
-	}
+  a {
+    color: ${colors.indigo[9]};
+  }
 `;
 
 const StyledButton = styled.button`

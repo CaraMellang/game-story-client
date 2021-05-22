@@ -4,7 +4,7 @@ import AuthTemplate from '../../components/auth/AuthTemplate';
 import Block from '../../components/common/Block';
 import Header from '../../components/common/Header';
 
-const LoginPage = () => {
+function LoginPage() {
   return (
     <>
       <Header />
@@ -15,6 +15,6 @@ const LoginPage = () => {
       </Block>
     </>
   );
-};
+}
 
 export default LoginPage;

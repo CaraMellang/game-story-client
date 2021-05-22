@@ -5,13 +5,13 @@ export type AuthTemplateProps = {
   children: ReactNode;
 };
 
-const AuthTemplate = ({ children }: AuthTemplateProps) => {
+function AuthTemplate({ children }: AuthTemplateProps) {
   return (
     <AuthTemplateBlock>
       <StyledBox>{children}</StyledBox>
     </AuthTemplateBlock>
   );
-};
+}
 
 const AuthTemplateBlock = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ const AuthTemplateBlock = styled.div`
 `;
 
 const StyledBox = styled.div`
-	width: 360px;
+  width: 360px;
 `;
 
 export default AuthTemplate;

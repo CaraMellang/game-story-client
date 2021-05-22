@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import media from '../../lib/styles/media';
 import Block from './Block';
 
-const Header = () => {
+function Header() {
   return (
     <Block>
       <HeaderBlock>
@@ -66,7 +66,7 @@ const RightBlock = styled.div`
     margin-left: 1rem;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 1rem;
+    border-radius: 20px;
     font-weight: bold;
     color: white;
     background: ${colors.blue[9]};
